@@ -6,7 +6,7 @@ public class TesteFuncionarios {
 
         Funcionario funcioario = new Funcionario();
 
-        Gerente gerente = new Gerente("47fnbuAgy");
+        Gerente gerente = new Gerente("asdufih1");
 
         Diretor diretor = new Diretor("8j88i799");
 

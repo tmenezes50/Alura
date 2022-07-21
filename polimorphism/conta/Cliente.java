@@ -7,6 +7,7 @@ public class Cliente {
     private double saldo;
 
     public Cliente(int numeroConta, int agencia) {
+        System.out.println("Conta criada com sucesso");
         this.numeroConta = numeroConta;
         this.agencia = agencia;
     }

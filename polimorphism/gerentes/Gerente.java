@@ -1,7 +1,7 @@
 package polimorphism.gerentes;
 
 public class Gerente extends Funcionario{
-    private String senha = "47fnuAgy";
+    private String senha = "asdufih1";
 
     public Gerente(String senha) {
         if (senha != this.senha) {
