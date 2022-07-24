@@ -23,4 +23,9 @@ public class ContaCorrente extends Conta{
         } else {this.saldo -= valor + 0.2;}
     }
 
+    @Override
+    public String toString() {
+        return String.format("Contacorrente: \n%s", super.toString());
+    }
+
 }

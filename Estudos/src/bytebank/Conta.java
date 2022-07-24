@@ -1,5 +1,7 @@
 package bytebank;
 
+import java.util.Objects;
+
 public class Conta {
     private String nome;
     private int numeroConta;
@@ -55,6 +57,26 @@ public class Conta {
     public void tranferir(double valor, Conta c) throws ExcecaoValor {
         saca(valor);
         c.deposita(valor);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Nome: %s\nNumero da conta: %d\n Agencia: %d",getNome(), getNumeroConta(), getAgencia());
+    }
+
+    @Override
+    public boolean equals(Object ref) {
+        Conta outra = (Conta) ref;
+
+        if(this.agencia != outra.agencia){
+            return false;
+        }
+
+        if(this.numeroConta != numeroConta) {
+            return false;
+        }
+
+        return true;
     }
 }
 
