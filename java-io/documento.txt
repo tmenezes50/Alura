@@ -1,0 +1,3 @@
+Escrevendo qualquer coisa pra ver testar a classe printStream de forma correta
+
+E tudo foi reduzido em apenas uma linha para escrever em um arquivo

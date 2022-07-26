@@ -2,7 +2,7 @@ package bytebank;
 
 import java.util.Objects;
 
-public class Conta {
+public class Conta implements Comparable<Conta> {
     private String nome;
     private int numeroConta;
     private int agencia;
@@ -61,7 +61,8 @@ public class Conta {
 
     @Override
     public String toString() {
-        return String.format("Nome: %s\nNumero da conta: %d\n Agencia: %d",getNome(), getNumeroConta(), getAgencia());
+        return String.format("Nome: %s\nNumero da conta: %d\nAgencia: %d\nSaldo: %.2f",
+                getNome(), getNumeroConta(), getAgencia(), getSaldo());
     }
 
     @Override
@@ -77,6 +78,11 @@ public class Conta {
         }
 
         return true;
+    }
+
+    @Override
+    public int compareTo(Conta outra) {
+        return Double.compare(this.saldo, outra.getSaldo());
     }
 }
 
