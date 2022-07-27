@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TesteSerializacao",
+            "request": "launch",
+            "mainClass": "TesteSerializacao",
+            "projectName": "Alura_1c55d353"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
